@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>report found</title>
+        <style type = "text/css">
+
+            div     { text-align: center;
+                padding: .3em }
+.c{margin-bottom:0.35em;}
+.c-margin-bottom {
+    margin-bottom: 1rem;
+}
+body{
+    background: url("i.jpeg"); background-size:cover;background-repeat: no-repeat;
+}
+.container{width: 55%  ;border-width: 10; border-radius:10px ;background-color:#ffffff6a;padding 0 10px 0 10px}
+.cell_pading{padding: 25px 50px 25px 50px;}
+.margin_pading{padding: 0 15px 0 15px;}
+.margin_pading1{padding: 10px 15px 0 15px;}
+.thin   { border-width: thin }
+.groove { border-style: groove }
+label { font-weight: inherit !important;
+}
+label {display: block; margin: 0; font-size: 1.1rem; font-weight: 400; line-height: 1.8; color: #0a0a0a;
+}
+.text-supertiny { font-size: .7rem; line-height: 1rem;}
+            .bold{font-size:30pt ;  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;color:#fff;font-weight:700}
+            .simple{font-size: 1.1rem; font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;color: black;font-weight: 400}
+            .background{background-color:#00b8e6}
+    
+            .nomargin{ display: block;box-sizing: border-box;width: 80%;height: 2.25rem;padding: .5rem; border: 1px solid #cacaca; border-radius: .2rem; background-color: #fefefe;box-shadow: inset 0 1px 2px rgba(10,10,10,.1);font-family: inherit;font-size: .875rem;font-weight: 400;line-height: 1.5;color: #0a0a0a;transition: box-shadow .5s,border-color .25s ease-in-out; -webkit-appearance: none;}
+            select:invalid{color:gray;}
+     .post{margin-top: -1.5em}
+     .button {
+    margin: 0;
+    padding: 0;
+    background: #007dc3;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-width:10%;
+     width:15%;
+     height:6%;
+    }
+   .button:hover{
+       background-color: #0059b3;
+       color:goldenrod;
+       
+   }
+        
+        </style>
+    </head>
+    <body>
+  <div class=" bold">Report for Found Items in college</div>
+ <br> <center>
+  <section class="container" >
+      <form method="post" action="reportfound.php">
+          <div class="simple margin_pading1 c">Report to see if the item you found is matching our criteria.</div>
+          <div class="simple margin_pading c-margin-bottom ">Search by: (use as many or few parameters as you wish)</div>
+          <div class="simple ">
+                <label>
+                    email
+                   <span class="text-supertiny">
+                    <div class="grid-x">
+                         <div class=" c-margin-bottom">
+                            <center>  <input type="text" name="email" value="" id="form_email" placeholder="" class="nomargin"></center>
+                         </div>
+                    </div>
+                </span>
+                </label>
+              </div>
+          <div class="simple post">
+                <label>
+                    Keyword
+                   <span class="text-supertiny">
+                    <div class="grid-x">
+                         <div class=" c-margin-bottom">
+                            <center>  <input type="text" name="keyword" value="" id="formid_keyword" placeholder="" class="nomargin"></center>
+                         </div>
+                    </div>
+                </span>
+                </label>
+              </div>
+              <div class="simple post">
+                    <label>
+                        Category
+                        <span class="text-supertiny">
+                        <div class="grid-x">
+                             <div class=" c-margin-bottom">
+                                <center>
+                                    
+                                <select type="dropdown" class="nomargin"
+                                name="Category">
+                                     <option  value="" disabled selected hidden >Please Select Category....</option>
+                                     <option  value="bag">Bag,Baggage,Luggage</option>
+                                     <option  value="idproof">ID Proof</option>
+                                     <option  value="idcard">ID Card</option>
+                                     <option  value="wallet">Wallet</option>
+                                     <option  value="valuables">Valuables</option>
+                                     <option  value="clothing">Clothing</option>
+                                     <option  value="electronic gadget">Electronic Gadget</option> 
+                                 </select>
+                               </center>
+                            </div>
+                        </div>
+                    </span>
+                    </label>
+                </div>
+                <div class="simple post">
+                <label>
+                        SubCategory
+                        <span class="text-supertiny">
+                        <div class="grid-x">
+                             <div class=" c-margin-bottom">
+                                <center>
+                                    
+                                <select type="dropdown" class="nomargin" name="SubCategory">
+                                     <option  value="" disabled selected hidden >Please Select SubCategory....</option>
+                                     <option  value="bag">Bag</option>
+                                     <option  value="pancard">Pancard</option>
+                                     <option  value="adharcard">Adharcard</option>
+                                     <option  value="dl">Drivinglicense</option>
+                                     <option  value="idcard">ID Card</option>
+                                     <option  value="wallet">Wallet</option>
+                                     <option  value="Gold">Gold ornament</option>
+                                     <option  value="clothing">Clothing</option>
+                                     <option  value="mobile">Mobile</option>
+                                     <option  value="laptop">Laptop</option> 
+                                     <option  value="watch">Watch</option>
+                                 </select>
+                               </center>
+                            </div>
+                        </div>
+                    </span>
+                    </label>
+                </div>
+                <div class="simple post">
+                        <label>
+                                Location
+                            <span class="text-supertiny">
+                                <div class="grid-x">
+                                    <div class=" c-margin-bottom">
+                                        <center>
+                                            
+                                        <select type="dropdown" class="nomargin"
+                                        name="Location"
+                                        >
+                                             <option  value="" disabled selected hidden >Please Select Location....</option>
+                                             <option  value="near mandir">near mandir</option>
+                                             <option  value="Sarojni Hostel">Sarojni Hostel</option>
+                                             <option  value="Cafeteria">Cafeteria</option>
+                                             <option  value="Portico">Portico</option>
+                                             <option  value="Gate No 3">Gate No 3</option>
+                                             <option  value="Gate No 1">Gate No 1</option>
+                                             <option  value="Gate No 2">Gate No 2</option>
+                                             <option  value="ABB 2">ABB 2</option>
+                                             <option  value="ABB3">ABB3</option>
+                                             <option  value="anapurna">anapurna</option> 
+                                             <option  value="Hostel H-3">Hostel H-3</option>
+                                        </select>
+                                        </center>
+                                    </div>
+                                </div>
+                            </span>
+                        </label>
+                </div>
+                <div class="cell c-margin-top text-center">
+                    <button type="submit" class="button">Submit</button>
+                </div>
+
+      </form>
+    </section>
+</center>
+  </div>
+
+    </body>
+</html>

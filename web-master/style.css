@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Calligraffitti;
+    src: url('https://fonts.googleapis.com/css?family=Calligraffitti');
+}
+#header{
+    margin-bottom: 100px;	
+	/* background-color:#72DDF7; */
+	font-size: 60px;
+	font-family: Calligraffitti;
+
+}
+
+.button1{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  position:relative;
+  left: 780px;
+  bottom:68px;
+  cursor:	pointer;
+  border-radius: 12px;
+	border: 4px solid rgb(4, 150, 187);
+  width:250px;
+}
+.button3{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	/* font-size: 16px;
+	position:relative;
+	left: 600px;
+	bottom:50px; */
+	cursor:	pointer;
+	border: 4px solid green;
+	width:250px;
+	float:left;
+	box-shadow: #72DDF7;
+  }
+ .button1:hover
+{
+	background-color: darkgreen;
+	color:#00f;
+	
+	  	
+}
+.button2{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	cursor:	pointer;
+	/* display: inline-block; */
+	font-size: 16px;
+	position:relative;
+	left: 515px;
+	top:-8px;
+	border: 4px solid rgb(4, 150, 187);
+	border-radius: 12px;
+	width:250px
+  }
+  .button2:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+.change
+{
+   background-color:white;
+   padding:10px;
+}
+.change:hover
+{
+	background:grey;
+	cursor:pointer;
+}
+/* #container */
+/* { */
+  /* background-color:#AAFAC8; */
+  
+/* } */
+#lost{
+	display: inline-block;
+	/* width:300px; */
+	/*float: left;*/
+	/* position:relative; */
+	/* left:1px; */
+	background-image:url("second.png");
+	background-size: 300px 300px;
+	height:300px;
+	width:300px;
+	/* left: 450px; */
+	
+}
+.yes
+{
+	animation-name: show_hide;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes show_hide
+{
+	0%{opacity:0 }
+	20%{opacity:.80;}
+	100%{ opacity: 0; }
+}
+#found{
+	display:inline-block;
+	position: relative;
+	right:18px;
+
+	/* position:absolute;	 */
+	/* width: 300px; */
+	/* float:right; */
+	/* right:470px; */
+	/* background-color:#B388EB; */
+	height:300px;
+	width:300px;
+}
+a
+{
+	color:white;
+	text-decoration-line: none;
+	font-size: 20px;;
+}
+#footer{
+	 /* position:relative; */
+	 /* bottom:20px; */
+	/* top:470px; */
+	/* padding:10px; */
+	
+	/* height:270px; */
+
+
+}
